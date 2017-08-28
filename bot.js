@@ -11,7 +11,7 @@ function respond() {
       botRegexSiege = /^\/siege/; botRegexOW = /^\/ratings/; 
       botRegexDO = /^\/draft order/; botRegexStop = /^\/stop/;
       botRegexPDR = /^\/predraft/;botRegexDB = /^\/draft board/; botRegexSlam = /^\/slam/; botRegexGLD = /^\/glados/;
-      botRegexGian = /^\/gian/; botRegexNFLS = /^\/NFL sdl/; botRegexShaki = /^\/shaki/;
+      botRegexGian = /^\/gian/; botRegexNFLS = /^\/NFL sdl/; botRegexDD = /^\/day drinkers/;
       botRegexCom = /^\/commands/; botRegexMA32 = /^\/pending/; botRegexTrade = /^\/trade/; 
       siege1 = 'https://i.groupme.com/350x419.png.adc8c73a6c1547e0a9e04320296329f8'; siege2 = 'https://i.groupme.com/1279x752.jpeg.aa5d0401e0df495bba4b4e09dc5a6bd7'
       siege3 = 'https://i.groupme.com/960x960.png.006e180e05d841c6a2962e844bf1e6fd';
@@ -66,9 +66,9 @@ function respond() {
     postMessage("http://www.nfl.com/schedules");
     this.res.end();
   } 
-  else if(request.text && botRegexShaki.test(request.text)) {
+  else if(request.text && botRegexDD.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://i.groupme.com/305x375.jpeg.a8dd3aa18c7a4963a553e6dc16bcb100.large");
+    postMessage("https://www.rooftopcrawl.com/media/cache/4a/79/4a796656f158476825b06f8fadd1c4ce.jpg");
     this.res.end();
   } 
   else if(request.text && botRegexYL.test(request.text)) {
