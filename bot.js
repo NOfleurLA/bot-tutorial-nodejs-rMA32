@@ -5,14 +5,14 @@ var botID = process.env.BOT_ID;
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      botRegex = /^\/cool guy/;  botRegexDL = /^\/DDL/i;botRegexSalt = /^\/salt/;botRegexRules = /^\/rules/
+      botRegex = /^\/cool guy/;  botRegexYL = /^\/league/i;botRegexSalt = /^\/salt/;botRegexRules = /^\/rules/
       botRegexAd=/^\/advance/;botRegexGTA = /^\/gta/; botRegexSC = /^\/SDL/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
       botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/sub/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/cc/;
       botRegexSiege = /^\/siege/; botRegexOW = /^\/ratings/; 
       botRegexDO = /^\/draft order/; botRegexStop = /^\/stop/;
-      botRegexPDR = /^\/predraft/;botRegexDB = /^\/draft board/; botRegexSlam = /^\/slam/; botRegexBrye = /^\/brye/;
+      botRegexPDR = /^\/predraft/;botRegexDB = /^\/draft board/; botRegexSlam = /^\/slam/; botRegexGLD = /^\/glados/;
       botRegexGian = /^\/gian/; botRegexScrotes = /^\/scrotes/; botRegexShaki = /^\/shaki/;
-      botRegexDaf = /^\/dafuq/; botRegexMA32 = /^\/pending/; botRegexTrade = /^\/trade/; 
+      botRegexCom = /^\/commands/; botRegexMA32 = /^\/pending/; botRegexTrade = /^\/trade/; 
       siege1 = 'https://i.groupme.com/350x419.png.adc8c73a6c1547e0a9e04320296329f8'; siege2 = 'https://i.groupme.com/1279x752.jpeg.aa5d0401e0df495bba4b4e09dc5a6bd7'
       siege3 = 'https://i.groupme.com/960x960.png.006e180e05d841c6a2962e844bf1e6fd';
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
@@ -48,14 +48,14 @@ function respond() {
     postMessage("https://pbs.twimg.com/profile_images/587294731471757313/ZpI5PfKq.jpg");
     this.res.end();
   } 
-  else if(request.text && botRegexDaf.test(request.text)) {
+  else if(request.text && botRegexCom.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://i3.kym-cdn.com/photos/images/facebook/000/787/356/d6f.jpg");
+    postMessage("https://docs.google.com/document/d/183QA8bQmNSHPiNZ_H4IybNHbmYf1PLXGuSpDZ_Q30aw/edit?usp=sharing");
     this.res.end();
   } 
-  else if(request.text && botRegexBrye.test(request.text)) {
+  else if(request.text && botRegexGLD.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://i.groupme.com/600x490.jpeg.b31d5153fb474d9bb18dd51b3d650afe.large");
+    postMessage("http://i0.kym-cdn.com/photos/images/original/000/966/907/343.jpg");
     this.res.end();
   } 
   else if(request.text && botRegexGian.test(request.text)) {
@@ -73,10 +73,9 @@ function respond() {
     postMessage("https://i.groupme.com/305x375.jpeg.a8dd3aa18c7a4963a553e6dc16bcb100.large");
     this.res.end();
   } 
-  else if(request.text && botRegexDL.test(request.text)) {
+  else if(request.text && botRegexYL.test(request.text)) {
     this.res.writeHead(200);
-    //postMessage("http://www.daddyleagues.com/maddenrating?name=&position=all&team="+request.text.substring(5,8));
-    postMessage("http://daddyleagues.com/mcf/team/"+request.text.substring(5,8)+"/depthchart");
+    postMessage("https://football.fantasysports.yahoo.com/f1/551727");
     this.res.end();
   } 
   
