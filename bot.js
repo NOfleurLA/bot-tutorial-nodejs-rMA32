@@ -107,7 +107,7 @@ function respond() {
   else if(request.text && botRegexSC.test(request.text)) {
     this.res.writeHead(200);
     
-    postMessage("http://daddyleagues.com/mcf/team/"+request.text.substring(5,8)+"/schedule");
+    postMessage("https://football.fantasysports.yahoo.com/f1/551727/matchup?week=1&mid1=1&mid2=2");
     this.res.end();
   }
   else if(request.text && botRegexP.test(request.text)) {
