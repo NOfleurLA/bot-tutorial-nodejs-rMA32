@@ -65,7 +65,7 @@ function respond() {
   } 
   else if(request.text && botRegexScrotes.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://i.groupme.com/1006x1340.jpeg.730381e4280e4028b8375432af14f39f.large");
+    postMessage("https://football.fantasysports.yahoo.com/f1/551727/matchup?week=1&mid1=1&mid2=2");
     this.res.end();
   } 
   else if(request.text && botRegexShaki.test(request.text)) {
