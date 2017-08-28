@@ -33,9 +33,9 @@ function respond() {
     postMessage("Stop appropriating black culture");
     this.res.end();
   } 
-  else if(request.text && botRegexProp.test(request.text)) {
+  else if(request.text && botRegexPDR.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://i.groupme.com/409x327.jpeg.08b5d95c51bb4897835cfe6b514f2f52.large");
+    postMessage("https://docs.google.com/spreadsheets/d/1sihVXUXCkyQtWAcCp6fo6813bJlYaedi_VPlYNPEa2M/edit?usp=sharing");
     this.res.end();
   }
   else if(request.text && botRegexKys.test(request.text)) {
