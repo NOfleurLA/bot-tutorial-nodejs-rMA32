@@ -11,7 +11,7 @@ function respond() {
       botRegexSiege = /^\/siege/; botRegexOW = /^\/ratings/; 
       botRegexDO = /^\/draft order/; botRegexStop = /^\/stop/;
       botRegexPDR = /^\/predraft/;botRegexDB = /^\/draft board/; botRegexSlam = /^\/slam/; botRegexGLD = /^\/glados/;
-      botRegexGian = /^\/gian/; botRegexNFLS = /^\/NFL sdl/; botRegexDD = /^\/dd/;
+      botRegexRP = /^\/roster/; botRegexNFLS = /^\/NFL sdl/; botRegexDD = /^\/dd/;
       botRegexCom = /^\/commands/; botRegexMA32 = /^\/pending/; botRegexTrade = /^\/trade/; 
       siege1 = 'https://i.groupme.com/350x419.png.adc8c73a6c1547e0a9e04320296329f8'; siege2 = 'https://i.groupme.com/1279x752.jpeg.aa5d0401e0df495bba4b4e09dc5a6bd7'
       siege3 = 'https://i.groupme.com/960x960.png.006e180e05d841c6a2962e844bf1e6fd';
@@ -56,9 +56,9 @@ function respond() {
     postMessage("http://i0.kym-cdn.com/photos/images/original/000/966/907/343.jpg");
     this.res.end();
   } 
-  else if(request.text && botRegexGian.test(request.text)) {
+  else if(request.text && botRegexRP.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://i.imgur.com/9V6ZnvD.png");
+    postMessage("1 QB, 2 WR, 2 RB, 1 TE, 1 W/R/T FLEX, 1 K, 1 D/ST, 8 Bench, 1 IR");
     this.res.end();
   } 
   else if(request.text && botRegexNFLS.test(request.text)) {
