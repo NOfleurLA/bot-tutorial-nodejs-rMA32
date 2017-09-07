@@ -6,7 +6,7 @@ var botID = process.env.BOT_ID;
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
       botRegex = /^\/cool guy/;  botRegexYL = /^\/league/i;botRegexSalt = /^\/salt/;botRegexDoIt = /^\/do it/
-      botRegexAd=/^\/advance/;botRegexGTA = /^\/gta/; botRegexSC = /^\/SDL/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
+      botRegexKR=/^\/nookie/;botRegexGTA = /^\/gta/; botRegexSC = /^\/SDL/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
       botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/sub/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexSS = /^\/settings/;
       botRegexSiege = /^\/siege/; botRegexOW = /^\/ratings/; 
       botRegexDO = /^\/draft order/; botRegexStop = /^\/stop/;
@@ -87,9 +87,9 @@ function respond() {
     postMessage("https://i.imgur.com/B5BSVqH.png");
     this.res.end();
   } 
-  else if(request.text && botRegexAd.test(request.text)) {
+  else if(request.text && botRegexKR.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://www.hackcollege.com/wp-content/uploads/2013/02/kno_advance.jpg");
+    postMessage("https://media.giphy.com/media/13jAFZph7vH1Di/giphy.gif");
     this.res.end();
   }
   else if(request.text && botRegexDoIt.test(request.text)) {
