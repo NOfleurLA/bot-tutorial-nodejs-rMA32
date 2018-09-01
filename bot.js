@@ -38,7 +38,7 @@ function respond() {
   }
   else if(request.text && botRegexDB.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://docs.google.com/spreadsheets/d/1ayrpAYzI8KuadjyuCltoIvV4EIWdZfV0nXL5kTTCpC8/edit?usp=sharing");
+    postMessage("https://docs.google.com/spreadsheets/d/1uENiWJf7QT1UlxWUkeK--wGxpjo5QXWSbKgF6cWcnjA/edit?usp=sharing");
     this.res.end();
   } 
   else if(request.text && botRegexSlam.test(request.text)) {
